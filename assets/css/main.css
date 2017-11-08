@@ -1,0 +1,72 @@
+body{
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background-color: #0067A3;
+  position: fixed;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+section{
+  background-color: #0079BF;
+  width: 100%;
+  height: 40em;
+  overflow: auto;
+}
+.box1{
+  margin-top: 6em;
+  margin-left: 1em;
+  color: white;
+}
+#boton{
+  margin-top: 2em;
+  margin-left: 1em;
+}
+#boton a{
+  background: #0067A3;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  text-decoration: none;
+  padding: 0.7em 10em 1em 0.7em;
+  color: #AFCAD9;
+  font-size: 1em;
+}
+#boton a:hover{
+    background: #005485;
+}
+.formu{
+  margin-left: 1em;
+}
+.text{
+  border: 0.1em solid #838C91;
+  background-color: #D4D6D8;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  padding-top: 0.7em;
+  padding-left: 0.7em;
+  width: 18em;
+  height: 1.8em;
+  font-family : inherit;
+  font-size   : 100%;
+  color: #90989C;
+}
+
+.botonGuardar{
+  background: #519839;
+  font-weight: bold;
+  color: white;
+  padding: 1em;
+  border: none;
+  /*bordes redondeados*/
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+
+}
