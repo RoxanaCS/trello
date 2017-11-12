@@ -1,31 +1,50 @@
 body{
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Montserrat', sans-serif;
 }
 header{
   background-color: #0067A3;
-  position: fixed;
-  width: 100%;
 }
-h1{
-  text-align: center;
-  color: white;
+.logo{
+  width: 8em;
+  margin: 1em 0 1em 35em;
 }
-section{
+#section1{
   background-color: #0079BF;
-  width: 100%;
-  height: 40em;
+  height: 35em;
   overflow: auto;
 }
 .box1{
-  margin-top: 6em;
   margin-left: 1em;
   color: white;
 }
-#boton{
-  margin-top: 2em;
+h3{
+  display: inline-block;
+}
+.fa-star-o{
   margin-left: 1em;
+}
+.fa-lock{
+  margin-left: 2em;
+}
+h4{
+  margin-left: 0.5em;
+  display: inline-block;
+}
+.fa-ellipsis-h{
+  margin-left: 43em;
+}
+.menu{
+  margin-left: 0.2em;
+  display: inline-block;
+  font-size: 1em;
+  color: #FFF;
+}
+/*formato de los formularios*/
+#boton{
+  margin-left: 1em;
+  margin-top: 0.7em;
 }
 #boton a{
   background: #0067A3;
@@ -35,48 +54,121 @@ section{
   text-decoration: none;
   padding: 0.7em 10em 1em 0.7em;
   color: #AFCAD9;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 #boton a:hover{
-    background: #005485;
+  background: #005485;
 }
+/*formato de las clases credas en el js*/
 .formu{
   margin-left: 1em;
-}
-.text{
-  border: 0.1em solid #838C91;
-  background-color: #D4D6D8;
+  width: 17.2em;
+  background-color: #E2E4E6;
   border-radius: 0.2em 0.2em 0.2em 0.2em;
   -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
   -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
-  padding-top: 0.7em;
-  padding-left: 0.7em;
-  width: 18em;
+  float: left;
+}
+.text{
+  /*border: 0.1em solid #838C91;*/
+  background-color: #D6D8DA;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  margin-top: 0.7em;
+  margin-left: 0.7em;
+  padding-top: 0.6em;
+  width: 17em;
   height: 1.8em;
   font-family : inherit;
-  font-size   : 100%;
+  font-size: 0.9em;
   color: #90989C;
 }
-
+/*para sacarle ese borde azul que tiene por defecto el input*/
+.text:focus {
+  outline: none;
+  color: #000;
+}
 .botonGuardar{
-  background: #519839;
+  background: #519939;
   font-weight: bold;
   color: white;
-  padding: 1em;
+  padding: 0.7em;
   border: none;
   /*bordes redondeados*/
   border-radius: 0.2em 0.2em 0.2em 0.2em;
   -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
   -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
-
+  margin: 0.7em 1em 0.7em 1em;
+}
+.fa-times{
+  color: #717272;
+}
+.tarjeta {
+  text-decoration: none;
+  color: #838C91;
+}
+.tarjeta:hover{
+  text-decoration: underline;
+  color: #000;
 }
 .lista{
   background-color: #E2E4E6;
-  width: 18em;
+  width: 18.3em;
   margin-left: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
   border-radius: 0.2em 0.2em 0.2em 0.2em;
   -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
   -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
   padding: 0.7em 0 1em 0.7em;
+  float: left;
+}
+.p-list{
+  font-weight: bold;
+}
+.newForm{
+  width: 16em;
+  background-color: #E2E4E6;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+}
+.newTexto{
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  width: 17em;
+  height: 4em;
+  font-family : inherit;
+  font-size   : 100%;
+  color: #90989C;
+}
+.newTexto:focus {
+  outline: none;
+  border:none;
+  box-shadow: 0 0 1em #719ECE;
+}
+.botonAñadir{
+  background: #519939;
+  font-weight: bold;
+  color: white;
+  padding: 0.8em;
+  border: none;
+  /*bordes redondeados*/
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  margin: 0.7em 1em 0.7em 0;
+}
+.newTarjeta{
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+  margin: 1em 1em 1em 0;
+  padding-left: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background: #FFF;
+  /*dejé esto en pixeles y no en em porque era muy poco lo que tenía que darles de ancho*/
+  box-shadow: 0 3px 1px -1px #96999A;
 }
